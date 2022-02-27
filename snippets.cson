@@ -1,0 +1,235 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# Each scope (e.g. '.source.coffee' above) can only be declared once.
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+
+'.text.tex.latex':
+  'rootfile':
+    'prefix': 'root'
+    'body' : '% !TEX root = ../../$1.tex'
+    'rightLabelHTML': '<span style="color:#b134eb">rootFile</span>'
+
+  'input':
+    'prefix': 'input'
+    'body' : '\\\\input{content/${1:sections}/$2}'
+    'rightLabelHTML': '<span style="color:#b134eb">input-file</span>'
+
+  'textit':
+    'prefix': 'tit'
+    'body' : '\\\\textit{$1} $2'
+    'rightLabelHTML': '<span style="color:#ff0">textit</span>'
+
+  'textbf':
+    'prefix': 'tbf'
+    'body' : '\\\\textbf{$1} $2'
+    'rightLabelHTML': '<span style="color:#ff0">textbf</span>'
+
+  'footnote':
+    'prefix': 'fn'
+    'body' : '\\\\footnote{$1}$2'
+    'rightLabelHTML': '<span style="color:#ff0">textbf</span>'
+
+  'begin':
+    'prefix': 'begin'
+    'body': """
+
+      \\\\begin{$1}
+        $2
+      \\\\end{$1}
+    """
+    'rightLabelHTML': '<span style="color:#34a8eb">begin</span>'
+
+  'section':
+    'prefix': 'section'
+    'body': """
+
+      \\\\begin{$1section}{${2:Title}}
+        $3
+      \\\\end{$1section}
+    """
+    'rightLabelHTML': '<span style="color:#34a8eb">section</span>'
+
+  'itemize':
+    'prefix': 'itemize'
+    'body': """
+
+      \\\\begin{itemize}
+        \\\\item $1
+      \\\\end{itemize}
+      $2
+    """
+    'rightLabelHTML': '<span style="color:#34a8eb">itemize</span>'
+
+  'enumerate':
+    'prefix': 'enumerate'
+    'body': """
+
+      \\\\begin{enumerate}
+        \\\\item $1
+      \\\\end{enumerate}
+      $2
+    """
+    'rightLabelHTML': '<span style="color:#34a8eb">enumerate</span>'
+
+  'table-quick':
+    'prefix': 'tabq'
+    'body': """
+
+      \\\\begin{table}[h]
+        \\\\centering
+          \\\\begin{tabular}{${1:c c c c}}
+            $2 \\\\\\\\ \\\\hline
+          \\\\end{tabular}
+      \\\\end{table}
+      $3
+    """
+    'rightLabelHTML': '<span style="color:#34a8eb">table-quick</span>'
+
+  'table-long':
+    'prefix': 'tabl'
+    'body': """
+
+      \\\\begin{table}[h]
+        \\\\centering
+          \\\\begin{tabular}{${1:c c c c}}
+            $4 \\\\\\\\ \\\\hline
+            $5
+          \\\\end{tabular}
+          \\\\caption[$2]{${3:Caption}}
+          \\\\label{tab:${2:Label}}
+      \\\\end{table}
+      \\\\noindent $6
+    """
+    'rightLabelHTML': '<span style="color:#34a8eb">table-long</span>'
+
+  'figure-quick':
+    'prefix': 'figq'
+    'body': """
+
+      \\\\begin{figure}[h]
+        \\\\centering
+          \\\\includegraphics[width=$1\\\\textwidth]{$2}
+      \\\\end{figure}
+      $3
+    """
+    'rightLabelHTML': '<span style="color:#34a8eb">figure-quick</span>'
+
+  'figure-long':
+    'prefix': 'figl'
+    'body': """
+
+      \\\\begin{figure}[h]
+        \\\\centering
+          \\\\includegraphics[width=$1\\\\textwidth]{$2}
+            \\\\caption[$3]{${4:Caption}}
+            \\\\label{fig:${3:Label}}
+      \\\\end{figure}
+      $5
+    """
+    'rightLabelHTML': '<span style="color:#34a8eb">figure-long</span>'
+
+  'figure-tikz':
+    'prefix': 'figtikz'
+    'body': """
+
+      \\\\begin{figure}[h]
+        \\\\centering
+        \\\\resizebox{$1\\\\textwidth}{!}{
+          \\\\input{$2}
+        }
+      \\\\end{figure}
+      $3
+    """
+    'rightLabelHTML': '<span style="color:#34a8eb">figure-tikz</span>'
+
+  'inline-math':
+    'prefix': 'm'
+    'body' : '$$1$ $2'
+    'rightLabelHTML': '<span style="color:#74eb34">inline-math</span>'
+
+  'equation':
+    'prefix': 'eq'
+    'body': """
+
+      \\\\begin{equation}
+        \\\\label{eq:$1}
+          $2
+      \\\\end{equation}
+      $3
+    """
+    'rightLabelHTML': '<span style="color:#34a8eb">equation</span>'
+
+  'align*':
+    'prefix': 'al*'
+    'body': """
+
+      \\\\begin{align*}
+          $1
+      \\\\end{align*}
+      $2
+    """
+    'rightLabelHTML': '<span style="color:#34a8eb">align*</span>'
+
+  'align':
+    'prefix': 'aling'
+    'body': """
+
+      \\\\begin{align}
+          $1
+      \\\\end{align}
+      $2
+    """
+    'rightLabelHTML': '<span style="color:#34a8eb">align</span>'
+
+  'fraction':
+    'prefix': 'frac'
+    'body': '\\\\frac{$1}{$2} $3'
+    'rightLabelHTML': '<span style="color:#eb4034">fraction</span>'
+
+  'smallmatrix':
+    'prefix': 'smallmat'
+    'body': """
+      \\\\left(
+            \\\\begin{smallmatrix}
+                $1
+            \\\\end{smallmatrix}
+      \\\\right)
+    """
+    'rightLabelHTML': '<span style="color:#eb4034">smallmatrix</span>'
+
+  'mathrm':
+    'prefix': 'rm'
+    'body': '\\\\mathrm{$1} $2'
+    'rightLabelHTML': '<span style="color:#eb8f34">mathrm</span>'
+
+  'left(right)':
+    'prefix': 'lrround'
+    'body': '\\\\left($1\\\\right) $2'
+    'rightLabelHTML': '<span style="color:#eb8f34">left(right)</span>'
+
+  'left[right]':
+    'prefix': 'lrsquare'
+    'body': '\\\\left[$1\\\\right] $2'
+    'rightLabelHTML': '<span style="color:#eb8f34">left[right]</span>'
+
+  'left{right}':
+    'prefix': 'lrcurly'
+    'body': '\\\\left\\\\{$1\\\\right\\\\} $2'
+    'rightLabelHTML': '<span style="color:#eb8f34">left{right}</span>'

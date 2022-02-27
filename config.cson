@@ -1,0 +1,90 @@
+"*":
+  Hydrogen: {}
+  "atom-beautify":
+    cpp: {}
+    general:
+      beautifyEntireFileOnSave: false
+  "atom-ide-ui":
+    use: {}
+  "autocomplete-plus":
+    enableBuiltinProvider: false
+    includeCompletionsFromAllBuffers: false
+  core:
+    disabledPackages: [
+      "autocomplete-atom-api"
+      "autocomplete-css"
+      "autocomplete-html"
+    ]
+    editor:
+      multiCursorOnClick: true
+    packagesWithKeymapsDisabled: [
+      "latex"
+    ]
+    packagesWithSnippetsDisabled: [
+      "language-latex"
+    ]
+    telemetryConsent: "no"
+    titleBar: "custom"
+  editor:
+    fontFamily: "FiraCode-Light"
+    fontSize: 19
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+  "exception-reporting":
+    userId: "fe680ec1-f2a8-475a-8691-fef27f518625"
+  "gpp-compiler":
+    compileToTmpDirectory: false
+  hyperclick:
+    darwinTriggerKeys: "altKey"
+  latex:
+    opener: "pdf-view"
+    outputDirectory: "build"
+  "pdf-view":
+    reverseSyncBehaviour: "Double click"
+  "pdfjs-viewer":
+    disableValidation: false
+  "spell-check":
+    grammars: [
+      "source.asciidoc"
+      "source.gfm"
+      "text.git-commit"
+      "text.plain"
+      "text.plain.null-grammar"
+      "source.rst"
+      "text.restructuredtext"
+      "text.tex.latex"
+      "text.tex.latex.beamer"
+    ]
+  "split-diff":
+    ignoreWhitespace: true
+  "tree-view":
+    autoReveal: true
+  welcome:
+    showOnStartup: false
+".beamer.latex.tex.text":
+  editor:
+    preferredLineLength: 120
+    softWrapAtPreferredLineLength: false
+".bibtex.text":
+  editor:
+    softWrapAtPreferredLineLength: false
+".latex.log.text":
+  editor:
+    softWrapAtPreferredLineLength: false
+".latex.memoir.tex.text":
+  editor:
+    preferredLineLength: 120
+    softWrapAtPreferredLineLength: false
+".latex.tex.text":
+  editor:
+    preferredLineLength: 100
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+".python.source":
+  editor:
+    autoIndentOnPaste: true
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+".tex.text":
+  editor:
+    softWrapAtPreferredLineLength: false
