@@ -233,3 +233,41 @@
     'prefix': 'lrcurly'
     'body': '\\\\left\\\\{$1\\\\right\\\\} $2'
     'rightLabelHTML': '<span style="color:#eb8f34">left{right}</span>'
+
+'.source.python':
+  'import-numpy':
+    'prefix': 'numpy'
+    'body': 'import numpy as np'
+    'rightLabelHTML': '<span style="color:#eb8f34">import-numpy</span>'
+  'import-scipy':
+    'prefix': 'scipy'
+    'body': 'import scipy as sp'
+    'rightLabelHTML': '<span style="color:#eb8f34">import-scipy</span>'
+  'import-pandas':
+    'prefix': 'pandas'
+    'body': 'import pandas as pd'
+    'rightLabelHTML': '<span style="color:#eb8f34">import-pandas</span>'
+  'import-matplotlib':
+    'prefix': 'matplotlib'
+    'body': 'import matplotlib.pyplot as plt'
+    'rightLabelHTML': '<span style="color:#eb8f34">import-matplotlib</span>'
+
+  'numpy-pi':
+    'prefix': 'pi'
+    'body': 'np.pi'
+    'rightLabelHTML': '<span style="color:#ff0">np.pi</span>'
+
+  'name=main':
+    'prefix': 'main'
+    'body': """
+      if __name__ == "__main__":
+        $1
+    """
+    'rightLabelHTML': '<span style="color:#ff0">if name==main:</span>'
+  'for-loop':
+    'prefix': 'for'
+    'body': """
+      for ${1:k} in ${2:range($3)}:
+        $4
+    """
+    'rightLabelHTML': '<span style="color:#ff0">for-loop</span>'

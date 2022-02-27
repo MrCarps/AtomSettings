@@ -1,0 +1,51 @@
+{
+  "_from": "https://www.atom.io/api/packages/pdfjs-viewer/versions/1.3.0/tarball",
+  "_id": "pdfjs-viewer@1.3.0",
+  "_inBundle": false,
+  "_integrity": "sha512-z8U7siE4hu3pZoj/+0gKj/RwqmEY+txIUOoTvImFIXzInPY5lPB1UACB79MjMsL25NtLqjY5IKxKVkdFNDIc2Q==",
+  "_location": "/pdfjs-viewer",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/pdfjs-viewer/versions/1.3.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/pdfjs-viewer/versions/1.3.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/pdfjs-viewer/versions/1.3.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/pdfjs-viewer/versions/1.3.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/pdfjs-viewer/versions/1.3.0/tarball",
+  "_shasum": "6ee12ba062da45aa9878d3538505445d07bd99ca",
+  "_spec": "https://www.atom.io/api/packages/pdfjs-viewer/versions/1.3.0/tarball",
+  "_where": "/private/var/folders/bs/344rmskj7rqff53b1ptc_vxr0000gn/T/apm-install-dir-2022127-7362-rv3uaa.dqbl",
+  "bugs": {
+    "url": "https://github.com/allefeld/atom-pdfjs-viewer/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "5.11.2",
+    "chokidar": ">=3.3.0",
+    "fs-extra": ">=8.1.0 <9.0.0",
+    "path": ">=0.12.7"
+  },
+  "deprecated": false,
+  "description": "Themed, fully featured PDF viewer for the Atom editor",
+  "deserializers": {
+    "PdfjsViewerView": "deserializeView"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/allefeld/atom-pdfjs-viewer#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "./lib/pdfjs-viewer",
+  "name": "pdfjs-viewer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allefeld/atom-pdfjs-viewer.git"
+  },
+  "version": "1.3.0"
+}

@@ -31,6 +31,6 @@ export default class PdfViewOpener extends Opener {
   }
 
   canOpen (filePath) {
-    return isPdfFile(filePath) && atom.packages.isPackageActive('pdf-view')
+    return isPdfFile(filePath) && atom.packages.isPackageActive('pdfjs-viewer')
   }
 }

@@ -43,6 +43,7 @@
     reverseSyncBehaviour: "Double click"
   "pdfjs-viewer":
     disableValidation: false
+    overrideFingerprint: true
   "spell-check":
     grammars: [
       "source.asciidoc"
