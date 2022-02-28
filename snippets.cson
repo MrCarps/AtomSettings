@@ -28,7 +28,7 @@
 
   'input':
     'prefix': 'input'
-    'body' : '\\\\input{content/${1:sections}/$2}'
+    'body' : '\\\\input{${1:content/sections/$2}}'
     'rightLabelHTML': '<span style="color:#b134eb">input-file</span>'
 
   'textit':
@@ -45,6 +45,19 @@
     'prefix': 'fn'
     'body' : '\\\\footnote{$1}$2'
     'rightLabelHTML': '<span style="color:#ff0">textbf</span>'
+
+  'reference':
+    'prefix': 'ref'
+    'body' : '\\\\ref{$1}$2'
+    'rightLabelHTML': '<span style="color:#ff0">ref</span>'
+  'equation-reference':
+    'prefix': 'eqref'
+    'body' : '\\\\eqref{$1}$2'
+    'rightLabelHTML': '<span style="color:#ff0">eqref</span>'
+  'citation':
+    'prefix': 'cite'
+    'body' : '\\\\cite{$1}$2'
+    'rightLabelHTML': '<span style="color:#ff0">cite</span>'
 
   'begin':
     'prefix': 'begin'
@@ -120,7 +133,7 @@
     'rightLabelHTML': '<span style="color:#34a8eb">table-long</span>'
 
   'figure-quick':
-    'prefix': 'figq'
+    'prefix': 'fig'
     'body': """
 
       \\\\begin{figure}[h]

@@ -1,0 +1,51 @@
+{
+  "_from": "https://www.atom.io/api/packages/latexer/versions/0.3.0/tarball",
+  "_id": "latexer@0.3.0",
+  "_inBundle": false,
+  "_integrity": "sha512-aiiF7qMfQZr+ca6S7hZNtMssAteenqAxCp/zhDJtnsVomAfNDUn29etFTHKvJvIsZHJ2dui5xl+w5zRbqnAXFA==",
+  "_location": "/latexer",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/latexer/versions/0.3.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/latexer/versions/0.3.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/latexer/versions/0.3.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/latexer/versions/0.3.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/latexer/versions/0.3.0/tarball",
+  "_shasum": "c434e5fb02e2c5cda240465f36365979ecd2c04d",
+  "_spec": "https://www.atom.io/api/packages/latexer/versions/0.3.0/tarball",
+  "_where": "/private/var/folders/bs/344rmskj7rqff53b1ptc_vxr0000gn/T/apm-install-dir-2022128-13507-1w33an9.m61yj",
+  "bugs": {
+    "url": "https://github.com/Focus/latexer/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "atom-space-pen-views": "^2.0.0",
+    "fs-plus": "^2.0.0"
+  },
+  "deprecated": false,
+  "description": "Adds LaTex autocompletion for Atom.io",
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "homepage": "https://github.com/Focus/latexer#readme",
+  "keywords": [
+    "tex",
+    "latex",
+    "bibtex",
+    "autocomplete"
+  ],
+  "license": "MIT",
+  "main": "./lib/latexer",
+  "name": "latexer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Focus/latexer.git"
+  },
+  "version": "0.3.0"
+}

@@ -6,9 +6,57 @@
       beautifyEntireFileOnSave: false
   "atom-ide-ui":
     use: {}
+  "autocomplete-paths":
+    followSymlinks: true
+    ignoreBuiltinScopes: true
+    imagePreview: true
+    normalizeSlashes: false
+    scopes: [
+      {
+        extensions: [
+          ".tex"
+          ".bib"
+          ".tikz"
+        ]
+        prefixes: [
+          "\\\\input{"
+          "\\\\include(?:only)?{([^\\}]*?\\,\\s*)*"
+          "\\\\(?:addbibresource|add(?:global|section)bib)(?:\\[.*?\\])?{"
+          "^%\\s*!T[eE]X\\s+(root|bib)\\s*=\\s*"
+        ]
+        relative: true
+        projectRelativePath: true
+        replaceOnInsert: [
+          [
+            ".tex"
+            ""
+          ]
+        ]
+        scopes: [
+          "text.tex.latex"
+          "text.tex.latex.tikz"
+        ]
+      }
+      {
+        extensions: [
+          ".jpeg"
+          ".jpg"
+          ".png"
+        ]
+        prefixes: [
+          "\\\\includegraphics(\\[.*?\\])?{"
+        ]
+        relative: true
+        projectRelativePath: true
+        scopes: [
+          "text.tex.latex"
+          "text.tex.latex.tikz"
+        ]
+      }
+    ]
   "autocomplete-plus":
+    backspaceTriggersAutocomplete: true
     enableBuiltinProvider: false
-    includeCompletionsFromAllBuffers: false
   core:
     disabledPackages: [
       "autocomplete-atom-api"
@@ -39,6 +87,9 @@
   latex:
     opener: "pdf-view"
     outputDirectory: "build"
+  latexer:
+    autocomplete_environments: false
+    autocomplete_references: false
   "pdf-view":
     reverseSyncBehaviour: "Double click"
   "pdfjs-viewer":
